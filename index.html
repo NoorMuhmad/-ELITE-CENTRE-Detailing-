@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELITE CENTRE DETAILING | Премиум Детейлинг Шымкент</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F17',
+                            card: '#141A26',
+                            border: '#232D3F',
+                            gold: '#EAB308',
+                            goldHover: '#CA8A04',
+                            amber: '#F59E0B',
+                            accent: '#06B6D4'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        tech: ['Orbitron', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0B0F17;
+            color: #F3F4F6;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(20, 26, 38, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card-hover:hover {
+            border-color: rgba(234, 179, 8, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(234, 179, 8, 0.15);
+            transform: translateY(-4px);
+        }
+        .gold-glow {
+            text-shadow: 0 0 20px rgba(234, 179, 8, 0.4);
+        }
+        .gold-box-glow {
+            box-shadow: 0 0 25px rgba(234, 179, 8, 0.25);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0B0F17;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #232D3F;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="custom-scrollbar selection:bg-brand-gold selection:text-brand-dark">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-brand-card via-amber-950/40 to-brand-card border-b border-brand-border/60 py-2 text-xs md:text-sm text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center text-brand-gold font-medium">
+                    <i class="fa-solid me-1.5 fa-location-dot"></i> Шымкент, Орынбаев көшесі, 75
+                </span>
+                <span class="hidden sm:inline-block text-gray-400">|</span>
+                <span class="hidden sm:flex items-center text-gray-300">
+                    <i class="fa-regular me-1.5 fa-clock text-brand-gold"></i> Дүйсенбі - Сенбі: 10:00 - 20:00
+                </span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="https://instagram.com/elite_centre_detailing" target="_blank" class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                    <i class="fa-brands fa-instagram text-base"></i> <span class="hidden md:inline">@elite_centre_detailing</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY HEADER NAVBAR -->
+    <header class="sticky top-0 z-50 glass-card border-b border-brand-border/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-gold to-amber-600 flex items-center justify-center text-brand-dark text-xl font-black shadow-lg shadow-brand-gold/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-car-rear"></i>
+                    </div>
+                    <div>
+                        <span class="font-tech text-lg md:text-xl font-bold tracking-wider block text-white leading-none">
+                            ELITE <span class="text-brand-gold">CENTRE</span>
+                        </span>
+                        <span class="text-[10px] tracking-[0.25em] text-gray-400 uppercase block font-semibold mt-1">
+                            Detailing Shymkent
+                        </span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAVIGATION -->
+                <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm">
+                    <a href="#home" class="text-brand-gold transition-colors">Басты бет</a>
+                    <a href="#services" class="text-gray-300 hover:text-brand-gold transition-colors">Қызметтер</a>
+                    <a href="#lounge" class="text-gray-300 hover:text-brand-gold transition-colors">VIP Сервис</a>
+                    <a href="#why-us" class="text-gray-300 hover:text-brand-gold transition-colors">Артықшылықтар</a>
+                    <a href="#reviews" class="text-gray-300 hover:text-brand-gold transition-colors">Пікірлер</a>
+                    <a href="#contact" class="text-gray-300 hover:text-brand-gold transition-colors">Байланыс</a>
+                </nav>
+
+                <!-- HEADER CTAS -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="https://wa.me/77071540044?text=%D0%A1%D3%A9%D0%BB%D0%B5%D0%BC%D0%B5%D1%82%D1%81%D1%96%D0%B7%D0%B1%D0%B5!%20%D0%90%D0%B2%D1%82%D0%BE%D0%B4%D0%B5%D1%82%D0%B5%D0%B9%D0%BB%D0%B8%D0%BD%D0%B3%D0%BA%D0%B5%20%D0%B6%D0%B0%D0%B7%D1%8B%D0%BB%D1%83%D2%93%D0%B0%20%D0%B1%D0%BE%D0%BB%D0%B0%D0%B1%D0%B0%D1%80%20%D0%BC%D0%B0%D2%A3%D0%B7%D0%B0%D0%BD%D1%8B%D2%A3%D1%8B%D0%B7%D0%B4%D1%8B%20%D0%B1%D1%96%D0%BB%D0%B3 me%D0%BC%20%D0%BA%D0%B5 me me?" target="_blank" class="p-3 bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/40 rounded-xl transition-all" title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </a>
+                    <a href="tel:+77071540044" class="px-5 py-3 rounded-xl bg-gradient-to-r from-brand-gold to-brand-goldHover text-brand-dark font-bold text-sm shadow-md shadow-brand-gold/20 hover:brightness-110 transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+7 707 154 0044</span>
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-gray-300 hover:text-white text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE NAV MENU SLIDEDOWN -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-brand-card border-b border-brand-border px-6 py-6 space-y-4">
+            <a href="#home" class="mobile-link block text-brand-gold font-semibold text-lg">Басты бет</a>
+            <a href="#services" class="mobile-link block text-gray-200 hover:text-brand-gold font-medium">Қызметтер / Услуги</a>
+            <a href="#lounge" class="mobile-link block text-gray-200 hover:text-brand-gold font-medium">VIP Lounge & Bar</a>
+            <a href="#why-us" class="mobile-link block text-gray-200 hover:text-brand-gold font-medium">Почему мы?</a>
+            <a href="#reviews" class="mobile-link block text-gray-200 hover:text-brand-gold font-medium">Отзывы</a>
+            <a href="#contact" class="mobile-link block text-gray-200 hover:text-brand-gold font-medium">Контакты</a>
+            <div class="pt-4 border-t border-gray-800 flex flex-col gap-3">
+                <a href="tel:+77071540044" class="w-full py-3 bg-brand-gold text-brand-dark text-center font-bold rounded-xl flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> +7 707 154 0044
+                </a>
+                <a href="https://wa.me/77071540044" target="_blank" class="w-full py-3 bg-emerald-600 text-white text-center font-bold rounded-xl flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Написать в WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative min-h-[85vh] flex items-center justify-center py-16 lg:py-24 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=2000&q=85" alt="Luxury Car Detailing Shymkent" class="w-full h-full object-cover object-center opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/70 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-transparent to-brand-dark/90"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-brand-gold/30 text-brand-gold text-xs font-semibold tracking-wider uppercase">
+                        <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+                        №1 Автодетейлинг Орталығы Шымкент
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
+                        Премиум класты <br class="hidden sm:inline">
+                        <span class="bg-gradient-to-r from-brand-gold via-amber-200 to-amber-500 bg-clip-text text-transparent gold-glow">
+                            автодетейлинг & шанақ жөндеу
+                        </span>
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p class="text-base sm:text-lg text-gray-300 max-w-2xl font-normal leading-relaxed">
+                        Полировка, нано-керамика, қорғаныс бронепленкасы, салонды химиялық тазалау. Автокөлігіңізді зауыттық жарқылына қайтарамыз! VIP күту бөлмесі, Бар, PlayStation 5 және барбер сервис.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-gold to-brand-goldHover text-brand-dark font-extrabold text-base shadow-lg shadow-brand-gold/30 hover:shadow-brand-gold/50 hover:scale-105 transition-all flex items-center justify-center space-x-3">
+                            <i class="fa-regular fa-calendar-check text-lg"></i>
+                            <span>Кездесуге жазылу / Записаться</span>
+                        </a>
+                        <a href="tel:+77071540044" class="px-8 py-4 rounded-xl glass-card hover:bg-white/10 text-white font-bold text-base border border-white/20 transition-all flex items-center justify-center space-x-3">
+                            <i class="fa-solid fa-phone text-brand-gold"></i>
+                            <span>+7 707 154 0044</span>
+                        </a>
+                    </div>
+
+                    <!-- Social Proof Quick Stats -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-brand-border/60 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-brand-gold font-tech">4.5 ★</div>
+                            <div class="text-xs text-gray-400 mt-1">Google Рейтинг</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white font-tech">1000+</div>
+                            <div class="text-xs text-gray-400 mt-1">Жаңартылған авто</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-brand-gold font-tech">100%</div>
+                            <div class="text-xs text-gray-400 mt-1">Сапа кепілдігі</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Feature Card / Quick Booking Preview -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8 border border-brand-gold/30 shadow-2xl relative">
+                        <div class="absolute -top-3 -right-3 bg-brand-gold text-brand-dark text-xs font-black uppercase px-3 py-1 rounded-full shadow">
+                            VIP Сервис
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-bolt text-brand-gold"></i> Тез арада консультация
+                        </h3>
+                        <p class="text-xs text-gray-400 mb-6">Тегін диагностика және қызмет бағасын білу үшін өтінім қалдырыңыз</p>
+                        
+                        <form id="heroQuickForm" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Атыңыз / Имя</label>
+                                <input type="text" required placeholder="Мұхтар" class="w-full bg-brand-dark/80 border border-brand-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Телефон нөмірі / Телефон</label>
+                                <input type="tel" required placeholder="+7 (707) 000-00-00" class="w-full bg-brand-dark/80 border border-brand-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Қызмет түрі / Услуга</label>
+                                <select class="w-full bg-brand-dark/80 border border-brand-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                                    <option>Полировка & Керамика</option>
+                                    <option>Бронепленка (PPF)</option>
+                                    <option>Химиялық тазалау (Химчистка)</option>
+                                    <option>Шанақ жөндеу және сырлау</option>
+                                    <option>Шумоизоляция</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-gold to-amber-500 text-brand-dark font-black text-sm tracking-wide uppercase shadow-lg hover:brightness-110 transition-all">
+                                Жазылуға өтінім беру
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE VIP AMENITIES LOUNGE BANNER (Inspired by real Google Reviews) -->
+    <section id="lounge" class="py-16 bg-gradient-to-b from-brand-dark via-brand-card/60 to-brand-dark relative border-y border-brand-border/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-gold text-xs font-extrabold uppercase tracking-widest">Максималды жайлылық</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">
+                    Күту барысындағы <span class="text-brand-gold">VIP Лаунж & Бар</span>
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base mt-3">
+                    Көлігіңіз күтімнен өтіп жатқанда, сіз біздің арнайы күту зонамызда уақытыңызды өте жайлы өткізе аласыз.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Lounge Feature 1 -->
+                <div class="glass-card p-6 rounded-2xl text-center glass-card-hover transition-all">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-500/10 text-brand-gold border border-brand-gold/30 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">PlayStation 5 Zone</h3>
+                    <p class="text-xs text-gray-400">Соңғы үлгідегі ойындар мен үлкен экранда ойын ойнау мүмкіндігі.</p>
+                </div>
+
+                <!-- Lounge Feature 2 -->
+                <div class="glass-card p-6 rounded-2xl text-center glass-card-hover transition-all">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-500/10 text-brand-gold border border-brand-gold/30 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-martini-glass-citrus"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Сусындар Бары</h3>
+                    <p class="text-xs text-gray-400">Хош иісті кофе, салқындатқыш сусындар және кез келген таңдау бар.</p>
+                </div>
+
+                <!-- Lounge Feature 3 -->
+                <div class="glass-card p-6 rounded-2xl text-center glass-card-hover transition-all">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-500/10 text-brand-gold border border-brand-gold/30 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Барбер Сервис</h3>
+                    <p class="text-xs text-gray-400">Уақытыңызды тиімді пайдаланып, шаш пен сақал күтімін жасатыңыз.</p>
+                </div>
+
+                <!-- Lounge Feature 4 -->
+                <div class="glass-card p-6 rounded-2xl text-center glass-card-hover transition-all">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-500/10 text-brand-gold border border-brand-gold/30 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Жеке Күту Бөлмесі</h3>
+                    <p class="text-xs text-gray-400">Жұмсақ дивандар, Wi-Fi, салқындатқыш жүйе және тыныш атмосфера.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+            <div>
+                <span class="text-brand-gold text-xs font-extrabold uppercase tracking-widest">Біздің қызметтер</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2">
+                    Автокөлігіңізге арналған <br><span class="text-brand-gold">Кәсіби Детейлинг</span>
+                </h2>
+            </div>
+            <p class="text-gray-400 text-sm max-w-md mt-4 md:mt-0">
+                Әрбір автокөлікке жеке көңіл бөліп, неміс және америкалық премиум химиялық құралдарды қолданамыз.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service Card 1 -->
+            <div class="glass-card rounded-2xl overflow-hidden glass-card-hover transition-all group border border-brand-border">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800&q=80" alt="Полировка и Керамика" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-brand-dark/80 text-brand-gold font-bold text-xs px-3 py-1 rounded-full border border-brand-gold/40">
+                        ТОП ҚЫЗМЕТ
+                    </span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">
+                        1. Нано-полировка және Керамика
+                    </h3>
+                    <p class="text-xs text-gray-400 leading-relaxed mb-4">
+                        Сызаттарды кешенді кетіру, кузов түсін тереңдету және 9H/10H керамикалық қаптама арқылы су мен кірден 2 жылға дейін қорғау.
+                    </p>
+                    <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Терең жылтырлық эффекті</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Гидрофобты қорғаныс</li>
+                    </ul>
+                    <a href="#contact" class="w-full py-3 block text-center rounded-xl border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-brand-dark font-bold text-xs uppercase transition-all">
+                        Бағасын білу / Записаться
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="glass-card rounded-2xl overflow-hidden glass-card-hover transition-all group border border-brand-border">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80" alt="Бронепленка PPF" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-brand-dark/80 text-brand-gold font-bold text-xs px-3 py-1 rounded-full border border-brand-gold/40">
+                        МАКСИМАЛДЫ ҚОРҒАНЫС
+                    </span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">
+                        2. Бронепленка (PPF Қорғаныс)
+                    </h3>
+                    <p class="text-xs text-gray-400 leading-relaxed mb-4">
+                        Премиум антигравийлік полиуретанды пленка. Тастардан, сызылудан және жол химиясынан кузов пен фаранды сенімді қорғайды.
+                    </p>
+                    <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Өзін-өзі калыбына келтіру (Self-healing)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> 5 жылдан астам кепілдік</li>
+                    </ul>
+                    <a href="#contact" class="w-full py-3 block text-center rounded-xl border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-brand-dark font-bold text-xs uppercase transition-all">
+                        Бағасын білу / Записаться
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="glass-card rounded-2xl overflow-hidden glass-card-hover transition-all group border border-brand-border">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=800&q=80" alt="Химчистка салона" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">
+                        3. Салонды Химиялық Тазалау
+                    </h3>
+                    <p class="text-xs text-gray-400 leading-relaxed mb-4">
+                        Салонды бөлшектей отырып толық тазалау, тері мен матаны арнайы кондиционерлермен өңдеу және жағымсыз иістерді жою.
+                    </p>
+                    <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Гипоаллергенді химикаттар</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Озондау және бактерияға қарсы өңдеу</li>
+                    </ul>
+                    <a href="#contact" class="w-full py-3 block text-center rounded-xl border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-brand-dark font-bold text-xs uppercase transition-all">
+                        Бағасын білу / Записаться
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="glass-card rounded-2xl overflow-hidden glass-card-hover transition-all group border border-brand-border">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=800&q=80" alt="Кузовной ремонт" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">
+                        4. Шанақ жөндеу және сырлау
+                    </h3>
+                    <p class="text-xs text-gray-400 leading-relaxed mb-4">
+                        Көліктің майысқан жерлерін түзеу (PDR сырлаусыз түзеу), профессионалды бояу таңдау және камерлық сырлау қызметі.
+                    </p>
+                    <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Түсті 100% дәл таңдау</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> PDR технологиясы</li>
+                    </ul>
+                    <a href="#contact" class="w-full py-3 block text-center rounded-xl border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-brand-dark font-bold text-xs uppercase transition-all">
+                        Бағасын білу / Записаться
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="glass-card rounded-2xl overflow-hidden glass-card-hover transition-all group border border-brand-border">
+                <div class="h-56 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=800&q=80" alt="Шумоизоляция" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">
+                        5. Шұусыздандыру (Шумоизоляция)
+                    </h3>
+                    <p class="text-xs text-gray-400 leading-relaxed mb-4">
+                        Премиум материалдармен автокөлікті толық немесе бөлшектеп дыбыс оқшаулау. Салондағы тыныштық пен акустиканы жақсарту.
+                    </p>
+                    <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Дыбыс деңгейін 70%-ға дейін төмендету</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold"></i> Вибро-шумо изоляция</li>
+                    </ul>
+                    <a href="#contact" class="w-full py-3 block text-center rounded-xl border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-brand-dark font-bold text-xs uppercase transition-all">
+                        Бағасын білу / Записаться
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service Card 6 (Bonus/Custom) -->
+            <div class="glass-card rounded-2xl p-6 border border-brand-gold/30 flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-brand-card to-amber-950/20">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-brand-gold/20 text-brand-gold flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Жеке Таңдау және Кешенді Пакеттер</h3>
+                    <p class="text-xs text-gray-300 leading-relaxed mb-4">
+                        Автокөлігіңіздің жағдайына байланысты арнайы кешенді детьминг пакеттерін құрастырып береміз.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <a href="tel:+77071540044" class="w-full py-3 block text-center rounded-xl bg-brand-gold text-brand-dark font-extrabold text-xs uppercase transition-all shadow-md">
+                        <i class="fa-solid fa-phone me-1"></i> Консультация алу
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US / VALUE PROPOSITION -->
+    <section id="why-us" class="py-20 bg-brand-card/40 border-y border-brand-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brand-gold text-xs font-extrabold uppercase tracking-widest">Неге бізді таңдайды?</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Шымкенттегі ең сенімді <br>
+                        <span class="text-brand-gold">Детейлинг Сервис</span>
+                    </h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        "ELITE CENTRE DETAILING" – бұл жай ғана автокөлік жуу немесе полировка емес. Бұл автокөлікке деген сүйіспеншілік пен жоғары мәдениет. Біз әрбір бөлшекке жіті мән береміз.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <!-- Feature item 1 -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl glass-card border-brand-border">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-white">Тәжірибелі Сертификатталған Шеберлер</h4>
+                                <p class="text-xs text-gray-400 mt-1">Клиенттеріміз ерекше атап өтетін Ильор сияқты өз ісінің кәсіби мамандары.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature item 2 -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl glass-card border-brand-border">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-white">Премиум Класты Материалдар</h4>
+                                <p class="text-xs text-gray-400 mt-1">Германия, АҚШ және Жапонияның ресми сертификатталған химиялық құралдары.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature item 3 -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl glass-card border-brand-border">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-white">Ресми Жұмыс Кепілдігі</h4>
+                                <p class="text-xs text-gray-400 mt-1">Орындалған барлық қызметтерге ресми кепілдік құжатын ұсынамыз.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase Image Side -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-brand-gold/30 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1000&q=85" alt="Detailing Master at Work" class="w-full h-auto object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-2xl border-brand-gold/30">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center font-black text-xl">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-base">Жоғары Стандарт & Сапа</h4>
+                                    <p class="text-xs text-gray-300">Орынбаева көшесі 75 мекенжайы бойынша сізді күтеміз</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- REAL TESTIMONIALS SECTION -->
+    <section id="reviews" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-gold text-xs font-extrabold uppercase tracking-widest">Клиенттер пікірі</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+                Google & Яндекс <span class="text-brand-gold">Пікірлері</span>
+            </h2>
+            <div class="flex items-center justify-center gap-2 mt-3">
+                <div class="text-brand-gold text-lg">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="text-white font-bold text-sm">4.5 / 5.0</span>
+                <span class="text-gray-400 text-xs">(38+ пікір)</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Real Review 1 -->
+            <div class="glass-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between glass-card-hover transition-all">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-brand-gold text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-[10px] text-gray-500">Google Review</span>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed mb-6 italic">
+                        "Қызмет көрсету өте жоғары деңгейде! Жігіттерге үлкен рахмет! Барлық жағдай жасалған! Тіпті бөлек күту бөлмесі бар! Барында кез келген сусын бар! PlayStation ойнағың келсе, ол да бар! Шаш қиғың келсе, барбер де бар!"
+                    </p>
+                </div>
+                <div class="flex items-center space-x-3 pt-4 border-t border-gray-800">
+                    <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-gold font-bold flex items-center justify-center text-sm">
+                        БҚ
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Бақыт Құрайышов</h4>
+                        <span class="text-[10px] text-gray-400">Жергілікті клиент</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Review 2 -->
+            <div class="glass-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between glass-card-hover transition-all">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-brand-gold text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-[10px] text-gray-500">Google Review</span>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed mb-6 italic">
+                        "Маған барлығы ұнады, әсіресе шебер Ильор өте әдепті және өз ісінің нағыз маманы. Көлікті тамаша күйде тапсырды!"
+                    </p>
+                </div>
+                <div class="flex items-center space-x-3 pt-4 border-t border-gray-800">
+                    <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold flex items-center justify-center text-sm">
+                        АА
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Арымбаева Асемай</h4>
+                        <span class="text-[10px] text-gray-400">Автокөлік иесі</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Review 3 -->
+            <div class="glass-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between glass-card-hover transition-all">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-brand-gold text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-[10px] text-gray-500">Клиент пікірі</span>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed mb-6 italic">
+                        "BMW M5 автокөлігіме кешенді полировка және бронепленка жасаттым. Нәтижесі күткенімнен де асып түсті. Рахмет ELITE CENTRE ұжымына!"
+                    </p>
+                </div>
+                <div class="flex items-center space-x-3 pt-4 border-t border-gray-800">
+                    <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-sm">
+                        АТ
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Арман Тұрсынов</h4>
+                        <span class="text-[10px] text-gray-400">Шымкент қ.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BOOKING & CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-gradient-to-t from-brand-card/80 to-brand-dark border-t border-brand-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details & Map Card -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-brand-gold text-xs font-extrabold uppercase tracking-widest">Байланыс акпараты</span>
+                        <h2 class="text-3xl font-extrabold text-white mt-2">Бізге келіңіз немесе хабарласыңыз</h2>
+                        <p class="text-xs text-gray-400 mt-2">Шымкент қаласының орталығында ыңғайлы орналасу</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Address -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl glass-card border-brand-border">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-400">Мекенжайымыз / Адрес</div>
+                                <div class="text-sm font-bold text-white mt-0.5">Улица Орынбаева здание 75 (Гоголя), Shymkent 160000, Kazakhstan</div>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl glass-card border-brand-border">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-400">Телефон / WhatsApp</div>
+                                <a href="tel:+77071540044" class="text-sm font-bold text-brand-gold hover:underline mt-0.5 block">
+                                    +7 (707) 154 0044
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Working Hours -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl glass-card border-brand-border">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-400">Жұмыс уақыты / Режим работы</div>
+                                <div class="text-sm font-bold text-white mt-0.5">Дүйсенбі - Сенбі: 10:00 – 20:00</div>
+                                <div class="text-xs text-red-400 mt-0.5">Жексенбі: Демалыс</div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl glass-card border-brand-border">
+                            <div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-400">E-mail</div>
+                                <div class="text-sm font-bold text-white mt-0.5">elitecentre.detailing01@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct WhatsApp Quick Action Button -->
+                    <a href="https://wa.me/77071540044" target="_blank" class="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm uppercase tracking-wider flex items-center justify-center space-x-3 shadow-lg shadow-emerald-600/20 transition-all">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>WhatsApp-қа бірден жазу</span>
+                    </a>
+                </div>
+
+                <!-- Main Booking Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 rounded-3xl border border-brand-gold/30 shadow-2xl">
+                        <h3 class="text-2xl font-extrabold text-white mb-2">Автокөлігіңізді жаздырыңыз</h3>
+                        <p class="text-xs text-gray-400 mb-6">Форманы толтырыңыз, менеджеріміз 10 минут ішінде сізбен байланысады</p>
+
+                        <form id="mainBookingForm" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-300 mb-1.5">Толық аты-жөніңіз *</label>
+                                    <input type="text" required placeholder="Мұхтар Әуезов" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-300 mb-1.5">Телефон нөміріңіз *</label>
+                                    <input type="tel" required placeholder="+7 (707) 123-45-67" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-300 mb-1.5">Автокөлік маркасы мен үлгісі</label>
+                                    <input type="text" placeholder="Мысалы: Toyota Camry 75 / BMW X5" class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-300 mb-1.5">Қызмет түрі</label>
+                                    <select class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors">
+                                        <option>Полировка және Нано-керамика</option>
+                                        <option>Бронепленка PPF (Толық / Частично)</option>
+                                        <option>Салонды Химиялық Тазалау</option>
+                                        <option>Шанақ жөндеу және сырлау</option>
+                                        <option>Шумоизоляция</option>
+                                        <option>Кешенді Тазалау & VIP Детейлинг</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1.5">Ыңғайлы күн немесе косымша тілектеріңіз</label>
+                                <textarea rows="3" placeholder="Қай күні келгіңіз келетінін жазыңыз..." class="w-full bg-brand-dark border border-brand-border rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-brand-gold transition-colors resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-gold via-amber-500 to-amber-600 text-brand-dark font-extrabold text-sm tracking-widest uppercase shadow-xl hover:brightness-110 transition-all flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Өтінімді жіберу / Отправить заявку</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark border-t border-brand-border/80 pt-12 pb-8 text-gray-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-brand-border/60">
+                
+                <!-- Footer Column 1: Info -->
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 rounded-lg bg-brand-gold flex items-center justify-center text-brand-dark font-black">
+                            <i class="fa-solid fa-car-rear"></i>
+                        </div>
+                        <span class="font-tech text-base font-bold text-white">ELITE CENTRE</span>
+                    </div>
+                    <p class="text-xs text-gray-400">
+                        Шымкент қаласындағы жоғары сапалы автодетейлинг, полировка, керамика және кузовты қорғау орталығы.
+                    </p>
+                </div>
+
+                <!-- Footer Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">Қызметтер</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Нано-керамика</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Бронепленка PPF</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Салон химчисткасы</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Кузовты жөндеу</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 3: Contacts -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">Мекенжай</h4>
+                    <p class="mb-2">Шымкент, Орынбаева көшесі, 75 үй</p>
+                    <p class="text-brand-gold font-bold mb-1">+7 707 154 0044</p>
+                    <p>elitecentre.detailing01@gmail.com</p>
+                </div>
+
+                <!-- Footer Column 4: Social -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">Әлеуметтік желілер</h4>
+                    <div class="flex space-x-3">
+                        <a href="https://instagram.com/elite_centre_detailing" target="_blank" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-lg hover:text-brand-gold hover:border-brand-gold transition-all">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/77071540044" target="_blank" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-lg hover:text-emerald-400 hover:border-emerald-500 transition-all">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-gray-500 gap-4">
+                <div>
+                    © 2026 ELITE CENTRE DETAILING Shymkent. Барлық құқықтар қорғалған.
+                </div>
+                <div>
+                    Мекенжай: Улица Орынбаева, 75, Shymkent
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SUCCESS MODAL POPUP (Simulation) -->
+    <div id="successModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="glass-card max-w-md w-full p-8 rounded-3xl border border-brand-gold text-center relative animate-bounce-short">
+            <div class="w-16 h-16 bg-brand-gold/20 text-brand-gold rounded-full flex items-center justify-center text-3xl mx-auto mb-4 border border-brand-gold">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-2xl font-extrabold text-white mb-2">Рахмет! Өтінішіңіз қабылданды!</h3>
+            <p class="text-xs text-gray-300 mb-6">Байланыс менеджеріміз жақын арада сізге хабарласады.</p>
+            <button id="closeModalBtn" class="w-full py-3 rounded-xl bg-brand-gold text-brand-dark font-extrabold text-sm uppercase">
+                Жабу / Закрыть
+            </button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form Submission Modal logic
+        const heroForm = document.getElementById('heroQuickForm');
+        const mainForm = document.getElementById('mainBookingForm');
+        const modal = document.getElementById('successModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            modal.classList.remove('hidden');
+            e.target.reset();
+        }
+
+        if(heroForm) heroForm.addEventListener('submit', handleFormSubmit);
+        if(mainForm) mainForm.addEventListener('submit', handleFormSubmit);
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) modal.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
